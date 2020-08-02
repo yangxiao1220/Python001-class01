@@ -14,6 +14,6 @@ class MaoyanPipeline:
         maoyan_list = []
         maoyan_list.append((item['item_name'], item['item_type'], item['item_time']))
         work02_movie = pandas.DataFrame(data=maoyan_list)
-        work02_movie.to_csv('./movies1.csv', encoding='gbk', mode='a', index=False, header=False)
+        work02_movie.to_csv('./maoyan.csv', encoding='gbk', mode='a', index=False, header=False)
         print(maoyan_list)
         return item
